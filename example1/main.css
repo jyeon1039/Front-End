@@ -1,0 +1,49 @@
+/* 전체적으로 마진과 패딩을 초기화 */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    width, height를 지정하지 않으면 default는
+    width: 100%;
+    height: auto;
+*/
+.header{
+    background: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.container{
+    width: 980px;
+    margin: auto; /* 중앙으로 이동 */
+}
+
+.container-left{
+    padding: 20px 0px;
+}
+
+.logo{
+    float: left;
+    margin-right: 5px;
+}
+
+.logo img{
+    display: block;
+}
+
+.menu{
+    float: left;
+}
+
+.menu-item{
+    float: left; /* 수평으로 된 레이아웃을 잡을 수 있음 */
+    padding: 8px 10px;
+}
+
+/* :: => 가상 요소 선택자 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
