@@ -2,8 +2,20 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--인터넷 익스플로어에서 최신의 렌더링 방식으로 렌더링해라-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--반응형 웹사이트를 위한 코드-->
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css"> <!-- type="text/css" 생략 가능-->
+    <base href="https://heropcode.github.io/GitHub-Responsive/">
+    <!--
+        base 없으면?
+        img 두 개의 scr가 다음과 같이 적힘.
+        https://heropcode.github.io/GitHub-Responsive/img/bg-small.jpg
+        https://heropcode.github.io/GitHub-Responsive/img/feature-tile__work.png
+        
+        => 동일한 부분을 계속 써야함!
+        *** base 태그는 <head> 태그 영역 안에 사용하여야하며 중복된 base 태그는 설정할 수 없음 ***
+    -->
 </head>
 <body>
     <div>안녕하세요</div>
@@ -12,5 +24,7 @@
     <span>안녕</span><span>나는 지현</span><span>입니다</span>
     <span>하이</span>
     <span>바이</span>
+    <img src="img/bg-small.jpg" alt="샘플 이미지">
+    <img src="img/feature-tile__work.png" alt="샘플 이미지2">
 </body>
 </html>
