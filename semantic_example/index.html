@@ -1,42 +1,49 @@
-<!--
-    * <header> : 로고, 메뉴 
-    * <footer> : 주소, 사업자 정보 ...
-    * <main> : 핵심 => IE 지원 불가, 한 문서에 하나의 <main> 요소만 포함 가능 
-    * <article> : 독립적으로 구분되거나 재사용 가능한 영역을 설정 (매거진/신문 기사, 블로그 등)
-        => 작성일자와 시간을 <time>의 datetime 속성으로 작성
-    * <section> : 문서의 일반적인 영역을 설정 => 영역을 나눌 때 많이 사용함
-    * div 와 section의 차이 => section은 의미를 가지지만, div는 의미를 가지지 않음
-
-    * <asdie> : 문서의 주요 내용과 간접적으로만 연관된 부분을 나타냄
-    * <nav> : 다른 페이지 또는 현재 페이지의 다른 부분과 연결되는 네비게이션 링크들의 집합을 정의할 때 사용함
-    * <address> : <body>, <article>, <footer> 등에서 연락처 정보를 제공하기 위해 포함하여 사용
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>콘텐츠 구분 예제</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li>Shorts</li>
-                <li>Designers</li>
-                <li>Teams</li>
-                <li>Community</li>
-                <li>Jobs</li>
-                <li>Hiring</li>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <p> Contact the author of this page: </p>
-        <address>
-            <a href="mailto:jim@rock.com"> jim@rock.com </a>
-            <a href="tel:010-1234-5678"> 010-1234-5678 </a>
-        </address>
+        <section>
+            <h1> Section </h1>
+            <article>
+                <h2>Article1</h2>
+                <p>Contents...</p>
+            </article>
+            <article>
+                <h2>Article2</h2>
+                <p>Contents...</p>
+            </article>
+            <article>
+                <h2>Article3</h2>
+                <p>Contents...</p>
+            </article>
+        </section>
+
+        <aside>
+            Aside
+        </aside>
     </main>
+
+    <footer>
+        <address>
+            <a href="mailto:nsa06120@naver.com">nsa06120@naver.com</a>
+            <a href="tel:+8201012345678">010-1234-5678</a>
+        </address>
+    </footer>
 </body>
 </html>
