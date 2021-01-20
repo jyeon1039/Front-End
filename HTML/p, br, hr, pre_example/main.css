@@ -1,0 +1,6 @@
+hr{
+    /*border: none;*/
+    border-bottom: 2px dashed blue;
+    border-top: 2px dashed blue;
+    height: 20px;
+}
